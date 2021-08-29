@@ -92,3 +92,8 @@ bool String::operator!=(const String& Obj)
 	return strcmp(this->_string, Obj._string);
 }
 
+char* String::getStr()
+{
+	return _string;
+}
+

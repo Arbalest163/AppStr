@@ -20,7 +20,7 @@ public:
 	virtual String& operator+=(const String& Obj);
 	virtual bool operator==(const String& Obj);
 	virtual bool operator!=(const String& Obj);
-	char* getStr() { return _string; }
+	virtual char* getStr();
 
 };
 

@@ -1,4 +1,4 @@
-﻿#include "String.h"
+﻿#include "BitString.h"
 
 int main()
 {
@@ -11,4 +11,6 @@ int main()
 	std::cout << str2.getStr() << "  " << str2.GetSize() << std::endl;
 	std::cout << str.getStr() << "  " << str.GetSize() << std::endl;
 	std::cout << str3.getStr() << "  " << str3.GetSize() << std::endl;
+	BitString bstr_1("-6456846");
+	std::cout << bstr_1.getBitStr() << "  " << std::endl;
 }
