@@ -26,6 +26,16 @@ String::String(const char* string): _string(nullptr), _size(0)
 	}
 }
 
+String::String(const int number)
+{
+	char buf[255]{0};
+	_itoa_s(number, buf, 10);
+	_size = strlen(buf);
+	_string = new char[_size + 1];
+	strcpy_s(_string, _size + 1, buf);
+
+}
+
 String::String(const String& Obj)
 {
 	*this = Obj;
@@ -60,7 +70,7 @@ String& String::operator=(const char* string)
 	return *this;
 }
 
-int String::GetSize()
+int String::length()
 {
 	return _size;
 }

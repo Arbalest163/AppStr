@@ -3,14 +3,16 @@
 int main()
 {
 
-	String str("utuio");
+	String str(-156);
 	String str2(str);
 	str = "QWERTY";
 	String str3 = str + str2;
 	str3 += str3;
-	std::cout << str2.getStr() << "  " << str2.GetSize() << std::endl;
-	std::cout << str.getStr() << "  " << str.GetSize() << std::endl;
-	std::cout << str3.getStr() << "  " << str3.GetSize() << std::endl;
-	BitString bstr_1("-6456846");
-	std::cout << bstr_1.getBitStr() << "  " << std::endl;
+	std::cout << str2.getStr() << "  " << str2.length() << std::endl;
+	std::cout << str.getStr() << "  " << str.length() << std::endl;
+	std::cout << str3.getStr() << "  " << str3.length() << std::endl;
+	BitString bstr_1("254");
+	//bstr_1.Clear();
+	std::cout << bstr_1.getStr() << "  " << bstr_1.length() << std::endl;
+
 }
